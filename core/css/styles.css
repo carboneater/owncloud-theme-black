@@ -134,6 +134,11 @@ button.primary:focus,
 	background-color: #745bca;
 }
 
+/* Searchbox */
+.searchbox input[type="search"] {
+	background: transparent url('../img/actions/search-white.svg') no-repeat 6px center;
+}
+
 .searchbox input[type="search"]:focus,
 .searchbox input[type="search"]:active{
 	background-color: #131;
