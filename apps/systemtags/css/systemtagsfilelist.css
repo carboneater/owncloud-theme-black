@@ -1,0 +1,7 @@
+#app-content-systemtagsfilter .select2-choices {
+	background-color: black;
+}
+
+.nav-icon-systemtagsfilter {
+	background-image: url('../img/tag.svg');
+}

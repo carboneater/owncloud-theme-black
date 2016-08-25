@@ -1,0 +1,11 @@
+.bubble,
+#app-navigation .app-navigation-entry-menu,
+.popovermenu .menuitem {
+	background-color: black;
+	color: #4c4;
+}
+
+.settings-button {
+	background-color: black;
+	background-image: url('../img/actions/settings.svg');
+}
