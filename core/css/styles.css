@@ -244,10 +244,11 @@ select {
 	background-color: black;
 }
 
+#quota div {
+	background-color: #444;
+}
+
 /* SCROLLBARS */
-/*::-webkit-scrollbar-track-piece {
-	background-color: #000;
-}*/
 ::-webkit-scrollbar-thumb {
 	background: #4c4;
 }

@@ -1,3 +1,9 @@
+/* FileList Recolor */
+table th,
+table td {
+	border-bottom: 1px solid #222;
+}
+
 /* icons for sidebar */
 .nav-icon-files {
 	background-image: url('../img/folder.svg');
