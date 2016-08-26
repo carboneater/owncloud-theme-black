@@ -92,10 +92,6 @@
 	color: #4c4;
 }
 
-/*media="screen" {
-	background-color: #000;
-}*/
-
 #navigation a span{
 	color: #4c4;
 }
@@ -115,6 +111,7 @@ button.primary:active,
 	border-color: #745bca;
 	background-color: #947bea;
 }
+
 .primary:hover,
 input[type="submit"].primary:hover,
 input[type="button"].primary:hover,
@@ -223,7 +220,7 @@ select {
 #app-navigation,
 .nav-trashbin {
 	background-color: black;
-	border-right: 1px solid #4c4;
+	border-right: 1px solid #262;
 }
 
 #app-navigation li > a {
@@ -239,11 +236,6 @@ select {
 }
 
 /* SETTINGS */
-#app-settings-content,
-#app-settings-header {
-	border-right: 1px solid #4c4;
-}
-
 #app-settings-content,
 .settings-button {
 	background-color: black;
