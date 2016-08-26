@@ -1,0 +1,19 @@
+@import '_colors';
+
+#app-settings-content,
+#app-settings-header {
+	border-right: 1px solid $darker-main;
+}
+
+.bubble,
+#app-navigation .app-navigation-entry-menu,
+.popovermenu .menuitem {
+	@extend .black-background;
+	@extend .light-text;
+}
+
+.settings-button {
+	//background-color: $back;
+	@extend .black-background;
+	background-image: url('../img/actions/settings.svg');
+}

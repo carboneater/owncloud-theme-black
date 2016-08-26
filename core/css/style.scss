@@ -1,0 +1,266 @@
+/**
+ * @author Gabriel Fournier, https://gfournier.ca
+ * @copyright Copyright (c) 2015-6, GFournier
+ * @license AGPL-3.0
+ *
+ * This code is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+@import '_colors';
+
+/* header color */
+/* this is the main brand color */
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+	@extend .black-background;
+	@extend .light-text;
+}
+
+/* log in screen background color */
+/* can also be a flat color or an image */
+#body-login {
+	@extend .black-background;
+	@extend .light-text;
+}
+
+#body-login p.info,
+#body-login p.info a,
+#body-login form fieldset legend,
+#body-login #datadirContent label,
+#body-login form fieldset .warning-info,
+#body-login form input[type="checkbox"]+label {
+	@extend .light-text;
+}
+
+/* General new input field look */
+#body-login input[type="text"],
+#body-login input[type="password"],
+#body-login input[type="email"] {
+	@extend .black-background;
+	@extend .light-text;
+}
+#body-login #submit.login {
+	@extend .black-background;
+	opacity: 0.5;
+}
+
+
+#controls {
+	@extend .black-background;
+}
+
+#expand:hover,
+#expand:focus,
+#expand:active {
+	@extend .light-text;
+}
+
+#expanddiv a{
+	@extend .light-text;
+}
+
+.header-appname{
+	@extend .light-text;
+}
+
+#navigation a span{
+	@extend .light-text;
+}
+
+/* primary action button, use sparingly */
+/* header color as border, brighter shade again, here as background */
+.primary,
+input[type="submit"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary,
+.primary:active,
+input[type="submit"].primary:active,
+input[type="button"].primary:active,
+button.primary:active,
+.button.primary:active {
+	border-color: #745bca;
+	background-color: #947bea;
+}
+
+.primary:hover,
+input[type="submit"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover,
+.primary:focus,
+input[type="submit"].primary:focus,
+input[type="button"].primary:focus,
+button.primary:focus,
+.button.primary:focus {
+	background-color: #8b75e4;
+}
+.primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
+.primary:disabled, input[type="submit"].primary:disabled, input[type="button"].primary:disabled, button.primary:disabled, .button.primary:disabled,
+.primary:disabled:hover, input[type="submit"].primary:disabled:hover, input[type="button"].primary:disabled:hover, button.primary:disabled:hover, .button.primary:disabled:hover,
+.primary:disabled:focus, input[type="submit"].primary:disabled:focus, input[type="button"].primary:disabled:focus, button.primary:disabled:focus, .button.primary:disabled:focus {
+	background-color: #745bca;
+}
+
+#settings{
+	@extend .light-text;
+}
+
+/* use logos from theme */
+#header .logo {
+	background-image: url('../img/logo.svg');
+	width: 250px;
+	height: 121px;
+}
+#header .logo-icon {
+	background-image: url('../img/logo-icon.svg');
+	width: 62px;
+	height: 34px;
+}
+
+body {
+	@extend .black-background;
+	@extend .light-text;
+}
+
+a,
+.box .activitytime,
+.section,
+tbody a,
+#userlist th.name {
+	@extend .light-text;
+}
+
+input {
+	@extend .light-text;
+}
+
+/* ACTIVITIES */
+#container {
+	background-color: black;
+}
+
+/* BUTTONS */
+input[type="submit"], input[type="button"],
+button, .button,
+#controls .button.view-switcher,
+#quota, select, .pager li a {
+	@extend .black-background; /* FIX THE FRACKING SVG COLORS!!!*/
+	border: 1px solid $main-color;
+	@extend .light-text;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="button"]:hover, input[type="button"]:focus,
+button:hover, button:focus,
+.button:hover, .button:focus,
+.button a:focus,
+select:hover, select:focus, select:active {
+	/*background-color: #222;*/
+	@extend .light-text;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="time"],
+input[type="date"],
+textarea,
+select {
+	@extend .black-background;
+	border: 1px solid $main-color;
+	@extend .light-text;
+}
+
+/* Navigation */
+#app-navigation,
+.nav-trashbin {
+	@extend .black-background;
+	border-right: 1px solid $darker-main;
+}
+
+#app-navigation li > a {
+	@extend .light-text;
+}
+
+#app-navigation li:active,
+#app-navigation li:hover,
+#app-navigation li:focus,
+.settings-button:hover,
+.settings-button:focus {
+	background-color: $lighter-back;
+}
+
+/* Searchbox */
+.searchbox input[type="search"] {
+	background: transparent url('../img/actions/search-white.svg') no-repeat 6px center;
+}
+
+.searchbox input[type="search"]:focus,
+.searchbox input[type="search"]:active{
+	background-color: $darkest-main;
+}
+
+/* SETTINGS */
+#app-settings-content,
+.settings-button {
+	@extend .black-background;
+}
+
+#quota div {
+	background-color: #444;
+}
+
+/* SCROLLBARS */
+::-webkit-scrollbar-thumb {
+	background: $main-color;
+}
+
+/* SVG */
+.svg {
+	fill: $main-color;
+}
+
+/* TABLE */
+#filestable,
+#filestable thead tr,
+#filestable thead tr th,
+#filestable tbody tr {
+	@extend .black-background;
+}
+
+#filestable tbody tr:hover,
+#filestable tbody tr:focus,
+#filestable tbody .name:focus,
+#filestable tbody tr:active,
+#filestable tbody tr.highlighted,
+#filestable tbody tr.highlighted .name:focus,
+#filestable tbody tr.selected,
+#filestable tbody tr.searchresult,
+tbody tr:hover,
+tbody tr:focus,
+tbody tr:active,
+table tr.mouseOver td {
+	background-color: $lighter-back;
+}
+
+#fileList .popovermenu .action,
+table th, table th a {
+	@extend .light-text;
+}

@@ -1,0 +1,14 @@
+$main-color: #4c4;
+$darker-main: #262;
+$darkest-main: #131;
+
+$back-color: black;
+$lighter-back: #222;
+
+.black-background {
+	background-color: $back-color;
+}
+
+.light-text {
+	color: $main-color;
+}
